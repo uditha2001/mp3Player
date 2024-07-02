@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="94.0" prefWidth="600.0" style="-fx-background-color: BLACK;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.mp3proj.HelloController">
+   <children>
+      <Label fx:id="SongLabel" alignment="CENTER" layoutX="6.0" layoutY="2.0" prefHeight="38.0" prefWidth="593.0" style="-fx-background-color: BLACK;" text="MP3Player" textFill="#26f73f">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <ProgressBar fx:id="songProgressBar" layoutY="45.0" prefHeight="18.0" prefWidth="600.0" progress="0.0" />
+      <Button fx:id="playBttn" layoutY="65.0" mnemonicParsing="false" onAction="#playMedia" text="play" />
+      <Button fx:id="pausebttn" layoutX="38.0" layoutY="65.0" mnemonicParsing="false" onAction="#pauseMedia" text="pause" />
+      <Button fx:id="ResetBttn" layoutX="86.0" layoutY="65.0" mnemonicParsing="false" onAction="#resetMedia" text="RESET" />
+      <Button fx:id="PreviousBttn" layoutX="134.0" layoutY="65.0" mnemonicParsing="false" onAction="#PreviousMedia" text="previous" />
+      <Button fx:id="nextBttn" layoutX="196.0" layoutY="65.0" mnemonicParsing="false" onAction="#nextMedia" text="Next" />
+      <ComboBox fx:id="speedBox" layoutX="238.0" layoutY="65.0" onAction="#changeSpeed" prefHeight="26.0" prefWidth="130.0" promptText="speed" />
+      <Slider fx:id="volumeSlider" layoutX="382.0" layoutY="71.0" max="100.0" prefHeight="14.0" prefWidth="204.0" value="50.0" />
+   </children>
+</AnchorPane>
